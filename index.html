@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatify</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Chatify</h2>
+        <button class="new-chat-btn" onclick="clearChatHistory()">+ New Chat</button>
+      </div>
+      <ul class="chat-list" id="chat-list"></ul>
+    </aside>
+
+    <main class="chat-container">
+      <header class="chat-header">
+        <h3>Chat</h3>
+      </header>
+
+      <section class="chat-body chat-body" id="chat-body">
+        <div class="message bot-message">
+          <div class="message-text">Hi! I'm Chatify. How can I assist you today?</div>
+        </div>
+      </section>
+
+      <footer class="chat-footer">
+        <form class="chat-form">
+          <input type="text" class="message-input" placeholder="Type your message..." />
+          <button type="submit" class="send-btn" id="send-message">➤</button>
+        </form>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
